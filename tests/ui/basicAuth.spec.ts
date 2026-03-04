@@ -5,7 +5,7 @@ import userData from '../../data/userDataPayload.json' with { type: 'json' };
 test('verify basic auth using credentials from JSON', async ({ page }) => {
  const username = process.env.BASIC_AUTH_USER;
   const password = process.env.BASIC_AUTH_PASS;
-  const url = userData.siteUrl;
+  const url = userData.siteBasicAuthUrl;
 
   // Manually constructing the URL with credentials: https://username:password@url
   // This is how you "enter" them for system-level popups

@@ -1,5 +1,16 @@
 {
-  "basicAuthUser": "admin",
-  "basicAuthPass": "admin",
-  "siteUrl": "the-internet.herokuapp.com/basic_auth"
+  "siteBasicAuthUrl": "the-internet.herokuapp.com/basic_auth",
+  "siteCheckboxesUrl":"the-internet.herokuapp.com/checkboxes",
+  "siterestfulbookingUrl":"restful-booker.herokuapp.com/booking",
+  "bookingData": {
+    "firstname": "Test",
+    "lastname": "Tester",
+    "totalprice": 111,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-04-01",
+      "checkout": "2026-04-10"
+    },
+    "additionalneeds": "Breakfast"
+  }
 }
