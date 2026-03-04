@@ -9,9 +9,10 @@ test('verify basic auth using credentials from JSON', async ({ page }) => {
 
   // Manually constructing the URL with credentials: https://username:password@url
   // This is how you "enter" them for system-level popups
-  await page.goto(`https://${username}:${password}@${url}`);
-
+  await page.goto(`https://${username}:${password}@${url}`),{ waitUntil: 'networkidle'};
+  
   // Validation
-  const successMessage = page.locator('p');
+  const successMessage = page.getByText('Congratulations!');
+  await expect(successMessage).toBeVisible({ timeout: 10000 });
   await expect(successMessage).toContainText('Congratulations! You must have the proper credentials.');
 });
