@@ -18,12 +18,13 @@ playwright-ts-test/
 ├── tests/                          # Test suites
 │   ├── ui/
 │   │   └── basicAuth.spec.ts       # UI Basic Auth test logic
+        └── checkboxes.spec.ts      # UI Basic checkbox logic
 │   └── api/
 │       └── booking.spec.ts         # API CRUD & state sharing test
 ├── pages/                          # Page Object Models
-│   └── LoginPage.ts                # Locators & actions for Login
+│   └── CheckboxesPage.ts           # Locators & actions for Checkbox
 ├── data/                           # Test data
-│   └── userPayload.json            # Static JSON test data
+│   └── userDataPayload.json        # Static JSON test data
 ├── .env                            # Environment secrets (ignored by Git)
 ├── .gitignore                      # Files excluded from version control
 ├── playwright.config.ts            # Browser & Parallel execution config

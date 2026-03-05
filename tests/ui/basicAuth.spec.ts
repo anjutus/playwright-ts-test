@@ -9,6 +9,7 @@ test('verify basic auth using credentials from JSON', async ({ page }) => {
 
   // Manually constructing the URL with credentials: https://username:password@url
   // This is how you "enter" them for system-level popups
+  // added networkidle and a custom timeout for network latency in the cloud environment.
   await page.goto(`https://${username}:${password}@${url}`),{ waitUntil: 'networkidle'};
   
   // Validation
