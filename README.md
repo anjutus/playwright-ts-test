@@ -3,7 +3,7 @@
 This repository documents my professional transition into modern automation testing using **Playwright** and **TypeScript**. It features industry-standard patterns, including Page Object Models (POM), API testing, and Cross-Browser validation.
 
 ## 🛠️ Project Objective
-The goal of this project is to demonstrate a robust automation framework capable of handling complex UI interactions and backend API verification, similar to the enterprise-level requirements I've managed in projects like **Verizon.com**.
+The goal of this project is to demonstrate a robust automation framework capable of handling complex UI interactions and backend API verification.
 
 ## 🏗️ Framework Architecture
 * **Language:** TypeScript (Type-safe scripting)
