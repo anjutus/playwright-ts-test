@@ -23,6 +23,7 @@ playwright-ts-test/
 │       └── booking.spec.ts         # API CRUD & state sharing test
 ├── pages/                          # Page Object Models
 │   └── CheckboxesPage.ts           # Locators & actions for Checkbox
+|   └── BasicAuthPage.ts            # URL & Credentials for Login page   
 ├── data/                           # Test data
 │   └── userDataPayload.json        # Static JSON test data
 ├── .env                            # Environment secrets (ignored by Git)
