@@ -2,6 +2,7 @@
   "siteBasicAuthUrl": "the-internet.herokuapp.com/basic_auth",
   "siteCheckboxesUrl":"the-internet.herokuapp.com/checkboxes",
   "siterestfulbookingUrl":"restful-booker.herokuapp.com/booking",
+  "sitetestautomationblogUrl":"testautomationpractice.blogspot.com",
   "bookingData": {
     "firstname": "Test",
     "lastname": "Tester",

@@ -33,7 +33,20 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+
+    // Capture screenshot only when a test fails.
+    screenshot: 'only-on-failure'
   },
+ //
+  expect: {
+    toHaveScreenshot: {
+      scale: 'css', // This forces 1:1 pixel rendering, ignoring OS scaling
+      caret: 'hide', // Bonus: hides the blinking cursor
+    },
+  },
+  
+  // Folder for test artifacts such as screenshots, videos, traces, etc.
+  outputDir: 'test-results', // This is the default directory
 
   /* Configure projects for major browsers */
   projects: [
@@ -42,15 +55,15 @@ export default defineConfig({
       use: { ...devices['Desktop Chrome'] },
     },
 
-    {
-      name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
-    },
+    // {
+    //   name: 'firefox',
+    //   use: { ...devices['Desktop Firefox'] },
+    // },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    // {
+    //   name: 'webkit',
+    //   use: { ...devices['Desktop Safari'] },
+    // },
 
     /* Test against mobile viewports. */
     // {
