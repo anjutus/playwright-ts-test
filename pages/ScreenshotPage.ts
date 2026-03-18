@@ -6,7 +6,8 @@ export class ScreenshotPage {
   readonly nameField: Locator;
   readonly dynamicStatsField: Locator;
   readonly htmlDynamicTableField: Locator;
-  readonly url = userData.sitetestautomationblogUrl;
+  readonly url = userData.sitetestautomationblogURL;
+
   constructor(page: Page) {
     this.page = page;
     this.nameField = page.locator('#name');

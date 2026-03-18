@@ -6,7 +6,7 @@ export class CheckboxesPage {
     readonly page : Page;
     readonly checkbox1 : Locator;
     readonly checkbox2: Locator;
-    readonly url = userData.siteCheckboxesUrl;
+    readonly url = userData.siteCheckboxesURL;
 
     constructor (page :Page){
         this.page = page;

@@ -7,7 +7,7 @@ test('verify basic auth using credentials from JSON', async ({ page }) => {
   const basicAuthPage = new BasicAuthPage(page);
   basicAuthPage.username = process.env.BASIC_AUTH_USER || "";
   basicAuthPage.password = process.env.BASIC_AUTH_PASS || "";
-  const url = userData.siteBasicAuthUrl;
+  const url = userData.siteBasicAuthURL;
 
   // Pass the URL and test credential to the page method
   await basicAuthPage.gotoWithCredentials(url, basicAuthPage.username, basicAuthPage.password);
