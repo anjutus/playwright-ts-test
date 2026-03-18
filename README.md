@@ -31,8 +31,8 @@ playwright-ts-test/
 |   └── ScreenshotPage.ts                    # Locators & actions for Alert and Popup    
 ├── data/                                    # Test data
 │   └── userDataPayload.json                 # Static JSON test data
-├── .env                            # Environment secrets (ignored by Git)
-├── .gitignore                      # Files excluded from version control
-├── playwright.config.ts            # Browser & Parallel execution config
-├── package.json                    # Dependencies & Scripts
-└── README.md                       # Project documentation
+├── .env                                     # Environment secrets (ignored by Git)
+├── .gitignore                               # Files excluded from version control
+├── playwright.config.ts                     # Browser & Parallel execution config
+├── package.json                             # Dependencies & Scripts
+└── README.md                                # Project documentation
