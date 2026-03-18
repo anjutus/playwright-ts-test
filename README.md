@@ -15,22 +15,22 @@ The goal of this project is to demonstrate a robust automation framework capable
 ## 📂 Folder Structure
 ```text
 playwright-ts-test/
-├── tests/                          # Test suites
+├── tests/                                   # Test suites
 │   ├── ui/
-│   │   └── screenshot.spec.ts-snapshots/  # Cross-platform visual baselines
-│   │   └── alertsandpopups.spec.ts # UI Basic Alert and Popup logic
-|   |   └── checkboxes.spec.ts      # UI Basic checkbox logic
-│   │   └── basicAuth.spec.ts       # UI Basic Auth test logic
-│   │   └── screenshot.spec.ts      # Visual Testing using SS logic
+│   │   └── screenshot.spec.ts-snapshots/    # Cross-platform visual baselines
+│   │   └── alertsandpopups.spec.ts          # UI Basic Alert and Popup logic
+|   |   └── checkboxes.spec.ts               # UI Basic checkbox logic
+│   │   └── basicAuth.spec.ts                # UI Basic Auth test logic
+│   │   └── screenshot.spec.ts               # Visual Testing using SS logic
 │   └── api/
-│       └── booking.spec.ts         # API CRUD & state sharing test
-├── pages/                          # Page Object Models
-│   └── CheckboxesPage.ts           # Locators & actions for Checkbox
-|   └── BasicAuthPage.ts            # URL & Credentials for Login page
-|   └── AlertPopupPage.ts           # Locators & actions for Alert and Popup
-|   └── ScreenshotPage.ts           # Locators & actions for Alert and Popup    
-├── data/                           # Test data
-│   └── userDataPayload.json        # Static JSON test data
+│       └── booking.spec.ts                  # API CRUD & state sharing test
+├── pages/                                   # Page Object Models
+│   └── CheckboxesPage.ts                    # Locators & actions for Checkbox
+|   └── BasicAuthPage.ts                     # URL & Credentials for Login page
+|   └── AlertPopupPage.ts                    # Locators & actions for Alert and Popup
+|   └── ScreenshotPage.ts                    # Locators & actions for Alert and Popup    
+├── data/                                    # Test data
+│   └── userDataPayload.json                 # Static JSON test data
 ├── .env                            # Environment secrets (ignored by Git)
 ├── .gitignore                      # Files excluded from version control
 ├── playwright.config.ts            # Browser & Parallel execution config
