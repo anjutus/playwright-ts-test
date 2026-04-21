@@ -4,6 +4,16 @@
   "siterestfulbookingURL":"restful-booker.herokuapp.com/booking",
   "sitetestautomationblogURL":"testautomationpractice.blogspot.com",
   "newTabURL":"https://www.pavantestingtools.com/",
+  "staticWebTable": {
+    "expectedRowCount": 6,
+    "expectedHeaders": ["BookName", "Author", "Subject", "Price"],
+    "sampleRow": {
+      "bookName": "Learn Selenium",
+      "author": "Amit",
+      "subject": "Selenium",
+      "price": "300"
+    }
+  },
   "bookingData": {
     "firstname": "Test",
     "lastname": "Tester",
