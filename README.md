@@ -16,23 +16,33 @@ The goal of this project is to demonstrate a robust automation framework capable
 ```text
 playwright-ts-test/
 ├── tests/                                   # Test suites
-│   ├── ui/
-│   │   └── screenshot.spec.ts-snapshots/    # Cross-platform visual baselines
-│   │   └── alertsandpopups.spec.ts          # UI Basic Alert and Popup logic
-|   |   └── checkboxes.spec.ts               # UI Basic checkbox logic
-│   │   └── basicAuth.spec.ts                # UI Basic Auth test logic
-│   │   └── screenshot.spec.ts               # Visual Testing using SS logic
-│   └── api/
-│       └── booking.spec.ts                  # API CRUD & state sharing test
-├── pages/                                   # Page Object Models
-│   └── CheckboxesPage.ts                    # Locators & actions for Checkbox
-|   └── BasicAuthPage.ts                     # URL & Credentials for Login page
-|   └── AlertPopupPage.ts                    # Locators & actions for Alert and Popup
-|   └── ScreenshotPage.ts                    # Locators & actions for Alert and Popup    
+│   ├── ui/                                  # UI test files
+│   │   ├── alertsandpopups.spec.ts          # Tests for alerts and popups
+│   │   ├── basicauth.spec.ts                # Basic authentication tests
+│   │   ├── checkboxes.spec.ts               # Checkbox interaction tests
+│   │   ├── dynamicWebTable.spec.ts          # Dynamic web table tests
+│   │   ├── paginationWebTable.spec.ts       # Pagination web table tests
+│   │   ├── screenshot.spec.ts               # Screenshot and visual tests
+│   │   ├── staticWebTable.spec.ts           # Static web table tests
+│   │   └── screenshot.spec.ts-snapshots/    # Visual regression snapshots
+│   └── api/                                 # API test files
+│       ├── booking.spec.ts                  # Booking API CRUD tests
+│       └── bookingmock.spec.ts              # Mocked booking API tests
+├── pages/                                   # Page Object Models (POM)
+│   ├── AlertPopupPage.ts                    # POM for alert and popup pages
+│   ├── BasicAuthPage.ts                     # POM for basic auth pages
+│   ├── CheckboxesPage.ts                    # POM for checkbox pages
+│   ├── DynamicWebTablePage.ts               # POM for dynamic web tables
+│   ├── PaginationWebTablePage.ts            # POM for pagination web tables
+│   ├── ScreenshotPage.ts                    # POM for screenshot pages
+│   └── StaticWebTablePage.ts                # POM for static web tables
 ├── data/                                    # Test data
-│   └── userDataPayload.json                 # Static JSON test data
-├── .env                                     # Environment secrets (ignored by Git)
-├── .gitignore                               # Files excluded from version control
-├── playwright.config.ts                     # Browser & Parallel execution config
-├── package.json                             # Dependencies & Scripts
-└── README.md                                # Project documentation
+│   └── userDataPayload.json                 # JSON payloads for tests
+├── playwright-report/                       # Generated test reports
+│   └── index.html                           # HTML report file
+├── test-results/                            # Test execution results
+├── playwright.config.ts                     # Playwright configuration
+├── package.json                             # Project dependencies and scripts
+├── tsconfig.json                            # TypeScript configuration
+└── README.md                                # This documentation file
+```

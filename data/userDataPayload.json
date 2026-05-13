@@ -14,6 +14,20 @@
       "price": "300"
     }
   },
+  "dynamicWebTable": {
+    "expectedHeaders": ["Name", "Disk (MB/s)", "Memory (MB)", "CPU (%)", "Network (Mbps)"],
+    "expectedRowCount": 4,
+    "expectedColumnCount": 5
+  },
+  "paginationWebTable": {
+    "expectedHeaders": ["ID", "Name", "Price", "Select"],
+    "rowsPerPage": 5,
+    "smartphone": {
+      "name": "Smartphone",
+      "price": "$10.99",
+      "expectedRowIndex": 0
+    }
+  },
   "bookingData": {
     "firstname": "Test",
     "lastname": "Tester",
